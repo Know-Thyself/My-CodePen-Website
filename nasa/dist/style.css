@@ -1,0 +1,419 @@
+body {
+font-family: play, Sans-serif, system-ui;
+background-color: #b1bfd8;
+height: 100vh;
+margin: 0;
+padding: 0;
+width: 100%;
+}
+
+.header {
+width:100%;
+height: auto;
+position: relative;
+z-index: 8;
+}
+
+.logo {
+display: flex;
+}
+ 
+.nav-bar {
+display: inline-block;
+justify-content: space-between;
+top : 0;
+position: fixed;
+width: 100%;
+height: 120px;
+background-color: #b1bfd8;
+margin: 0;
+}
+ 
+.nav-link {
+align-items: stretch;
+text-decoration : none;
+font-size : 1.5rem;
+font-weight: bold;
+font-family: play, Sans-serif;
+text-align : center;
+color: #003777;
+border-radius : 8px;
+display: flex;
+background-color: #b1bfd8;
+position: relative; 
+top: -100px;
+right: 40px;
+}
+   
+ul {
+display: inline-block;
+justify-content: space-between;
+list-style: none;
+text-align: center;
+float: right;
+}
+
+li {
+list-style: none;
+justify-content: space-between;
+align-items: center;
+display: inline-block;
+padding: 5px;
+margin: 5px;
+}
+    
+a {
+text-decoration: none;
+font-size: 1.5rem;
+text-align: center;
+display: block;
+}
+    
+ul a:hover {
+border-radius: 8px;
+color: white;
+}
+
+.nav-link:hover {
+background-color: #003777;
+}
+   
+h1 {
+font-family: play, Sans-serif;
+font-size: 1.75rem;
+color: #f0f0f0;
+background-color: #003777;
+position: fixed;
+width: 100%;
+  top: 100px;
+}
+
+h2 {
+font-family: 'Merienda One', cursive;
+font-size: 1.65rem;
+color: #de3d37;
+text-shadow: 2px 2px 2px black;
+font-weight: bolder;
+}
+
+.subscription { 
+color: #d9eaed;
+background: #6782b4;
+width: 100%;
+position: relative;
+display: block;
+margin-top: 155px;
+
+}
+ 
+.subscription a:hover {
+color: orange;
+background: #202020;
+}
+
+.subscription a { 
+text-indent: 0;
+margin: 20px;
+}
+ 
+input {
+font-size: 1.25rem;
+color: #f8f9d2;
+font-weight: bolder;
+background: #005;
+}
+ 
+.form :hover {
+color: #77ff00;
+}
+ 
+.news-headline {
+display: block;
+height: 40px;
+text-align: center;
+font-size: 1.75rem;
+font-family: play, Sans-serif;
+font-weight: bold;
+text-shadow: 2px 2px 2px #0d3240;
+margin-top: 20px;
+}
+
+h3 {
+font-family: play, Sans-serif;
+color: #f0f0f0;
+font-size: 1.5rem;
+background-color: #003777;
+width: 170px;
+height: 30px;
+border-radius: 8px;
+  
+}
+
+.photo-gallery {
+max-width: 100%;
+height: auto;
+display: block;
+margin: auto;
+}
+
+h4 {
+font-family: play, Sans-serif;
+color: #f0f0f0;
+font-size: 1.5rem;
+background-color: #003777;
+width: 145px;
+height: 30px;
+border-radius: 8px;
+}
+
+.embedded-video {
+border: 0;
+display: block;
+position: relative;
+overflow: hidden;
+width: 100%;
+ 
+z-index: 2;
+margin: auto;
+padding-bottom: 40px;
+}
+
+.embedded-video::after {
+padding-top: 56.25%;
+  height: 0;
+display: block;
+content: '';
+}
+ 
+.embedded-video iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+.vdeos {
+background-color: #b1bfd8;
+}
+
+h5 {
+font-family: play, Sans-serif;
+color: #f0f0f0;
+font-size: 1.5rem;
+background-color: #003777;
+width: 260px;
+height: 30px;
+border-radius: 8px;
+}
+
+.space-flight {
+display: grid;
+max-width: 100%;
+font-size: 1.75rem;
+grid-gap: 20px;
+background-color: #6782b4;
+margin: 0;
+align-items: center;
+}
+ 
+.Mars {
+background-color: #7f5a83;
+font-family: play, Sans-serif;
+color: cyan;
+font-weight: bold;
+text-align: center;
+text-shadow: 2px 2px 2px black;
+padding: 30px 20px;
+border: 1px solid cyan;
+box-shadow: 3px 3px 2px #b1bfd8;
+}
+ 
+.Space {
+background-color: #0d324d;
+color: #d9e4f5;
+font-family: play, Sans-serif;
+font-weight: bold;
+text-align: center;
+text-shadow: 2px 2px 2px black;
+padding: 30px 20px;
+border: 1px solid #d9e4f5;
+box-shadow: 3px 3px 2px #b1bfd8;
+}
+ 
+.Fun {
+background-color: #fc575e;
+font-family: play, Sans-serif;
+font-weight: bold;
+color: #90d5ec;
+text-align: center;
+text-shadow: 2px 2px 2px black;
+padding: 30px 20px;
+border: 1px solid #90d5ec;
+box-shadow: 3px 3px 2px #b1bfd8;
+}
+ 
+.space-flight p {
+color: black;
+font-family: play, Sans-serif;
+font-size: 1.5rem;
+font-weight: bold;
+text-shadow: 1px 1px 1px #f0f0f0;
+text-indent: 100px;
+text-align: justify;
+}
+
+.information {
+font-family: play, Sans-serif;
+font-size: 1.75rem;
+color: #de3d37;
+text-shadow: 1px 1px 1px black;
+font-weight: bolder;
+text-align: center;
+display: block;
+}
+
+.info {
+list-style: lower-roman;
+display: list-item;
+font-size: 1.25rem;
+}
+
+h6 {
+font-family: play, Sans-serif;
+color: #f0f0f0;
+font-size: 1.5rem;
+background-color: #003777;
+width: 120px;
+height: 30px;
+border-radius: 8px;
+}
+
+p {
+text-align: justify;
+margin: 40px;
+text-indent: 100px;
+font-size: 1.3rem;
+font-weight: bold;
+text-shadow: 1px 1px 1px black;
+}
+
+.about {
+color: #010101;
+background-color: #b1bfd8;
+text-shadow: none;
+font-weight: normal;
+}
+
+.footer ul {
+text-align: center;
+background-color: #003777;
+color: #f0f0f0;
+font-size: 1.25rem;
+display: block;
+width: 100%;
+}
+
+
+@media(max-width:660px) {
+  .nav-bar {
+  height: 142px;
+  }
+  ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  }
+  
+  .nav-link { 
+  font-size: 0.5rem;
+  top: -130px;
+  right: 20px;
+  color: #003777;
+  }
+  
+  .nav-link:hover {
+  background-color: #003777;
+  color: #f0f0f0;
+  }
+  
+  li {
+  padding: 4px 4px;
+  margin: 2px; 
+  }
+  
+  h1 {
+  font-size: 1.3rem;
+    top: 120px;
+  }
+  
+  h2 {
+  font-size: 1.3rem;
+  }
+  
+  .subscription {
+  margin-top: 180px;
+  }
+  
+  input {
+  font-size: 1.1rem;
+  }
+  
+  .news-headline {
+  font-size: 1.4rem;
+  }
+  
+  .heading {
+  font-size: 1.3rem;
+  height: 25px;
+  }
+  h4 {
+    font-size: 1.3rem;
+  }
+  
+  h5 {
+    width: 230px;
+    font-size: 1.3rem;
+  }
+  .space-flight p {
+  font-size: 1.25rem;
+  }
+  
+  p {
+  font-size: 1.25rem;
+  }
+  
+  .embedded-video {
+  width: 100%;
+  }
+  
+  .space-flight {
+  grid-column-gap: 20px;
+  }
+  
+  .Mars {
+  font-size: 1.25rem;
+  padding: 15px 10px;
+  margin-bottom: 15px;
+  }
+  
+  .Space {
+  font-size: 1.25rem;
+  padding: 15px 10px;
+  margin-bottom: 15px;
+  }
+  
+  .Fun {
+  font-size: 1.25rem;
+  padding: 15px 10px;
+  }
+  
+  .information {
+  font-size: 1.5rem;  
+  }
+  
+  .footer ul {
+  font-size: 1rem;
+  }
+}
